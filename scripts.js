@@ -49,13 +49,13 @@ $(document).ready( function(){
     $('.loader-dots').hide();
     
     $('.buttons').on('click', function(){
-        $('.loader-dots').toggle();
+        $('.loader-dots').fadeToggle(1200);
             setTimeout(function(){
-                $('.loader-dots').toggle();  
-            },5000);
-        $(".workspace").fadeToggle('slow');
+                $('.loader-dots').fadeToggle(1000);  
+            },4000);
+        $(".workspace").fadeToggle(400);
             setTimeout(function(){
-               $('.workspace').fadeToggle('fast'); 
+               $('.workspace').fadeToggle(200); 
             },5000);
         
     });
