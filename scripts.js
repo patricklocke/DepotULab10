@@ -50,11 +50,16 @@ $(document).ready( function(){
     
     $('.buttons').on('click', function(){
         $('.loader-dots').toggle();
-        setTimeout(function(){
-            $('.loader-dots').toggle();  
-        },5000);
+            setTimeout(function(){
+                $('.loader-dots').toggle();  
+            },5000);
+        $(".workspace").fadeToggle('slow');
+            setTimeout(function(){
+               $('.workspace').fadeToggle('fast'); 
+            },5000);
         
     });
+    $('.workspace').on()
     
    
 });
