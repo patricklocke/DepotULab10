@@ -47,9 +47,10 @@ input {
     color: white;
     border-radius: 5px;
     margin: 10px 10px;
-    font-size: 25px
-    
+    font-size: 25px;
 }
+ /*Huge thank you to Girish Sharma at CodePen for the loading-dots animation!*/
+ 
 .loader-dots {
   position: absolute;
   top: calc(50% - 10px);

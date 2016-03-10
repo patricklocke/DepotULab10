@@ -46,10 +46,11 @@ var divide = function(){
     });
 }
 $(document).ready( function(){
+    var thinking = ["Hmm..", "I'm thinking, I'm thinking...", "That's a tough one..", "I.. uh.. well....", "Processing..."];
     $('.loader-dots').hide();
     $('#hmm').hide();
-    
     $('.buttons').on('click', function(){
+        $('#hmm').text(thinking[Math.floor(Math.random()*6)+1]);
         $('.loader-dots').fadeToggle(1200);
             setTimeout(function(){
                 $('.loader-dots').fadeToggle(1000);  
