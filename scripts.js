@@ -47,6 +47,7 @@ var divide = function(){
 }
 $(document).ready( function(){
     $('.loader-dots').hide();
+    $('#hmm').hide();
     
     $('.buttons').on('click', function(){
         $('.loader-dots').fadeToggle(1200);
@@ -56,10 +57,11 @@ $(document).ready( function(){
         $(".workspace").fadeToggle(400);
             setTimeout(function(){
                $('.workspace').fadeToggle(200); 
-            },5000);
+            },6000);
+        $('#hmm').fadeToggle(1200);
+            setTimeout(function(){
+                $('#hmm').fadeToggle(1000)
+            },4000);
         
     });
-    $('.workspace').on()
-    
-   
 });
